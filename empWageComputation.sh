@@ -35,5 +35,7 @@ randomCheck=$((RANDOM%3));
 	salary=$(($empRatePerHr*$wHour));
 	totalSalary=$(($totalSalary+$salary));
 	((day++));
+echo "Employee Daily wage: " ${salary[*]}
+echo "Employee Total wage:" ${totalSalary[@]}
 done
 echo "Employee has earned $totalSalary $ in a month (Total working Hour : $totalWorkingHour)";
